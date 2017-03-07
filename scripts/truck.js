@@ -25,6 +25,11 @@
     }.bind(this));
   };
 
+  Truck.prototype.getAllOrders = function () {
+      var orderArray = Object(this.db.getAll());
+      return orderArray;
+    };
+
   App.Truck = Truck;
   window.App = App;
 
