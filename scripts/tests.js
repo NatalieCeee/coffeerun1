@@ -26,7 +26,7 @@ QUnit.test( "Truck Stuff", function( assert ) {
     emailAddress: 'm@bond.com',
     coffee: 'earl grey'
   });
-  // The problem here was that the Truck object had no way of retrieving all the order data
+  // Problem: the Truck object had no way of retrieving all the order data
   // Solution: write a getAllOrders function for the prototype
   myTruck.printOrders();
   assert.deepEqual(myTruck.getAllOrders(), {
